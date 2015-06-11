@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFF;
+	background-attachment: fixed;
+	background-color: #333;
+	background-image: url(../images/rubber_grip.png);
+	background-repeat: repeat;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color:#fff;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+h1 { 
+
+	font-family:"DIN 1451 Mittelschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; 
+	font-size:44px;  /* should be 42 but font renders small */
+	font-weight:normal; 
+	font-style:normal; 
+	color:#fff;
+	line-height:42px;
+	margin-bottom:32px;
+	text-transform:uppercase;
+}
+
+
+h2{
+	font-family:"DIN 1451 Mittelschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; 
+	font-size:29px; /* should be 28 but font renders small */
+	font-weight:normal; 
+	font-style:normal; 
+	color:#fff;
+	line-height:28px;
+	margin-bottom:18px;
+	text-transform:uppercase;
+}
+
+h3{
+	font-family:"DIN 1451 Mittelschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; 
+	font-size:22px; /* should be 21 but font renders small */
+	font-weight:normal; 
+	font-style:normal; 
+	color:#fff;
+	line-height:18px;
+	margin-bottom:18px;
+	text-transform:uppercase;
+}
+
+
+#container {
+	width:960px;
+	margin:80px auto;
+}
+
+#pads {
+	/*width:480px;
+	height:480px;*/
+	margin:auto;
+	clear:both;
+	display:block;
+	padding:0;
+}
+
+#pads li {
+	padding:0;
+	margin:0;
+	display:block;
+	width:160px;
+	height:160px;
+	float:left;
+	text-align:center;
+	font-size:12px;
+}
+
+#pads li a {
+	font-weight:normal;
+	padding:15px 0 0 0;
+	color:#333;
+	height:145px;
+	width:160px;
+	display:block;
+	background:url(../images/pad_320_off.png);
+	background-size:contain;
+}
+
+#pads li a:hover {
+	background:url(../images/pad_320_on.png);
+	background-size:contain;
+}
+
+.sm2_playing {
+	background:url(../images/pad_320_play.png) !important;
+	background-size:contain !important;
+}
+
+.sm2_paused {
+	background:url(../images/pad_320_pause.png) !important;
+	background-size:contain !important;
+}
+
+.footer {
+	margin:60px 0;
+	text-align:center;
+}
+
+/* mobile */
+@media all and (max-width: 960px) { 
+	#container {
+		width:600px;
+		margin:20px auto;
+	}
+}
+@media all and (max-width: 600px) { 
+	#container {
+		width:480px;
+		margin:20px auto;
+	}
+}
